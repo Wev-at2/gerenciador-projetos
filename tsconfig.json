@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "~/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "tailwindcss",
+      "@types/node",
+    ]
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.vue",
+    "test/**/*.ts"
+  ]
+}
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "moduleResolution": "bundler",
+//     "strict": true,
+//     "jsx": "preserve",
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./*"],
+//       "~/*": ["./*"]
+//     },"types": ["tailwindcss"],
+//   },
+//   "include": ["./**/*.ts", "./**/*.vue", "test/**/*.ts"]
+// }

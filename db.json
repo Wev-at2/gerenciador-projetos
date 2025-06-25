@@ -1,0 +1,36 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "nome": "Site Institucional",
+      "descricao": "Landing page para clínica",
+      "preco": 3200,
+      "tipo": "Web",
+      "categoria": "Landing Page"
+    },
+    {
+      "id": 2,
+      "nome": "Dashboard Admin",
+      "descricao": "Painel administrativo com login",
+      "preco": 5200,
+      "tipo": "Web",
+      "categoria": "Sistema"
+    },
+    {
+      "nome": "New project",
+      "descricao": "Banner Principal",
+      "preco": 199,
+      "tipo": "teste",
+      "categoria": "Teste",
+      "id": 3
+    },
+    {
+      "nome": "Teste V4 Company",
+      "descricao": "Teste Técnico – Desenvolvedor Web (Vue 3 + Nuxt 3 + Pinia)",
+      "preco": 3500,
+      "tipo": "Processo seletivo",
+      "categoria": "Processo seletivo",
+      "id": 4
+    }
+  ]
+}

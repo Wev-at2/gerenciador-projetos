@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b20710;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+h1, .h1 {
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+h2, .h2 {
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 58px;
+}
+
+h3, .h3 {
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+h4, .h4 {
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+p, .p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* button, .btn {
+  @apply py-2 rounded-md font-semibold transition duration-300;
+} */
+
+.btn-primary {
+  background-color: #e50914;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #b20710;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #e50914;
+  border: 2px solid #e50914;
+}
+.btn-secondary:hover {
+  background-color: #b20710;
+  color: #fff;
+}
+
+input, textarea, select {
+  background-color: #262626;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+input.error, textarea.error, select.error {
+  border-color: #e50914;
+}
+
+.error-message {
+  color: #e50914;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card {
+  background-color: #262626;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+thead {
+  background-color: #333;
+  text-align: left;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+tr:hover {
+  background-color: #262626;
+}
+
+a {
+  color: #e50914;
+  text-decoration: none;
+}
+a:hover {
+  color: #b20710;
+}
+
+.toast-success {
+  background-color: #22c55e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.toast-error {
+  background-color: #e50914;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.loader {
+  border: 4px solid #262626;
+  border-top: 4px solid #e50914;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
