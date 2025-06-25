@@ -61,17 +61,6 @@ export const useProjetosStore = defineStore('projetos', {
         )
         const projetos = data.value as Projeto[]
 
-
-        // const config = useRuntimeConfig()
-        // const { data, error } = await useFetch<Projeto[]>(
-        //   `${config.public.apiBase}/projetos?${params.toString()}`,
-        //   {
-        //     onResponse({ response }) {
-        //       total = Number(response.headers.get('X-Total-Count') || '0')
-        //     }
-        //   }
-        // )
-
         console.log('Projetos recebidos:', data.value)
 
         if (error.value) throw new Error('Erro ao carregar projetos')

@@ -28,21 +28,3 @@
     "test/**/*.ts"
   ]
 }
-// {
-//   "compilerOptions": {
-//     "target": "ESNext",
-//     "module": "ESNext",
-//     "moduleResolution": "bundler",
-//     "strict": true,
-//     "jsx": "preserve",
-//     "esModuleInterop": true,
-//     "skipLibCheck": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "baseUrl": ".",
-//     "paths": {
-//       "@/*": ["./*"],
-//       "~/*": ["./*"]
-//     },"types": ["tailwindcss"],
-//   },
-//   "include": ["./**/*.ts", "./**/*.vue", "test/**/*.ts"]
-// }
