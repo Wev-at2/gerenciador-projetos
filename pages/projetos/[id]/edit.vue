@@ -2,7 +2,7 @@
   <div class="max-w-xl mx-auto p-6">
     <h1 class="text-2xl font-bold mb-4 text-white">✏️ Editar Projeto</h1>
 
-    <Form :initial-values="projeto" :validation-schema="schema" @submit="onSubmit" v-if="projeto" class="space-y-4">
+    <Form v-if="projeto" :initial-values="projeto" :validation-schema="schema" class="space-y-4" @submit="onSubmit">
 
       <div>
         <label class="block font-medium text-white">Nome</label>
@@ -42,16 +42,16 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: 'auth'
-})
-
-import { useRuntimeConfig } from 'nuxt/app'
+import { useRuntimeConfig, useFetch  } from 'nuxt/app'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
 import { useRoute, useRouter } from 'vue-router'
 import { onMounted, ref } from 'vue'
-import { useFetch } from 'nuxt/app'
+
+
+definePageMeta({
+  middleware: 'auth'
+})
 
 interface Projeto {
   id: number

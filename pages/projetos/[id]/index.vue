@@ -11,7 +11,8 @@
 
     <div v-else class="text-gray-400">🔄 Carregando detalhes do projeto...</div>
 
-    <NuxtLink to="/projetos"
+    <NuxtLink
+to="/projetos"
       class="mt-6 inline-block w-full text-center py-2 border border-gray-600 text-white rounded hover:bg-gray-700 transition">
       ⬅️ Voltar para lista
     </NuxtLink>
@@ -19,12 +20,12 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: 'auth'
-})
 import { useFetch, useRuntimeConfig } from 'nuxt/app'
 import { onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+definePageMeta({
+  middleware: 'auth'
+})
 
 
 interface Projeto {

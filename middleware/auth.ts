@@ -1,7 +1,7 @@
 import { defineNuxtRouteMiddleware, navigateTo } from "nuxt/app"
 
 export default defineNuxtRouteMiddleware((to) => {
-  if (process.server) return
+  if (import.meta.server) return
 
   const token = localStorage.getItem('token')
   console.log('Middleware auth, rota:', to.path, 'Token:', token)
