@@ -1,0 +1,33 @@
+name: CI - Nuxt App
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Instalar dependências
+        run: npm ci
+
+      - name: 🧹 Lint (ESLint)
+        run: npx eslint . --ext .ts,.vue
+
+      - name: 🧱 Build do Nuxt
+        run: npm run build
+
+      - name: 🧪 Rodar testes (Vitest)
+        run: npm run test
