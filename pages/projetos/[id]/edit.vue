@@ -42,16 +42,16 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  middleware: 'auth'
+})
+
 import { useRuntimeConfig, useFetch  } from 'nuxt/app'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
 import { useRoute, useRouter } from 'vue-router'
 import { onMounted, ref } from 'vue'
 
-
-definePageMeta({
-  middleware: 'auth'
-})
 
 interface Projeto {
   id: number
@@ -105,9 +105,4 @@ const onSubmit = async (valores: any) => {
     console.error(err)
   }
 }
-
-
-
-
-
 </script>
